@@ -9,10 +9,12 @@
  */
 class stringDifference {
 
-	private static function strToBin(string $string){
+	private static function strToBin(string $string)
+	{
 		$binString = '';
 		
-		for ($i = 0; $i < strlen($string); $i++) {
+		for ($i = 0; $i < strlen($string); $i++) 
+		{
 			$binString .= sprintf("%08b", ord($string[$i]));
 		}
 
@@ -20,7 +22,8 @@ class stringDifference {
 		
 	}
 
-	public static function hammeringDistance(string $string1, string $string2, bool $binmode = false){
+	public static function hammeringDistance(string $string1, string $string2, bool $binmode = false)
+	{
 		
 		if($string1 === $string2) return 0;
 		
