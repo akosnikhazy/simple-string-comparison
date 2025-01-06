@@ -6,11 +6,11 @@ It returns an int value representing the difference between two strings. For exa
 ## Use it like this:
 Letter by letter mode: This will return 1 as one letter is different (in the word fox there is a typo).
 ```
-echo stringDifference::hammeringDistance('The quick brown fex jumps over the lazy dog','The quick brown fox jumps over the lazy dog')
+echo stringDifference::hammingDistance('The quick brown fex jumps over the lazy dog','The quick brown fox jumps over the lazy dog')
 ```
 
 Binary mode:
 This will return 2 because in binary mode the distance between the e and o in the two sentences is 2.
 ```
-echo stringDifference::hammeringDistance('The quick brown fex jumps over the lazy dog','The quick brown fox jumps over the lazy dog',true));
+echo stringDifference::hammingDistance('The quick brown fex jumps over the lazy dog','The quick brown fox jumps over the lazy dog',true));
 ```
