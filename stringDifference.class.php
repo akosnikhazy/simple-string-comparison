@@ -4,7 +4,7 @@
  * You can compare strings letter by letter or bit by bit. The greater the 
  * number returned, the greater the difference between the two strings.
  * 
- * stringDifference::hammeringDistance(string $string1, string $string2, ?bool $binmode = false): int
+ * stringDifference::hammingDistance(string $string1, string $string2, ?bool $binmode = false): int
  *
  */
 class stringDifference {
@@ -22,7 +22,7 @@ class stringDifference {
 		
 	}
 
-	public static function hammeringDistance(string $string1, string $string2, bool $binmode = false)
+	public static function hammingDistance(string $string1, string $string2, bool $binmode = false)
 	{
 		
 		if($string1 === $string2) return 0;
@@ -40,13 +40,13 @@ class stringDifference {
 
 		if(($lendif = $str1len - $str2len) < 0) $limit  =  $str1len;
 			
-		$hammeringDistance = 0;
+		$hammingDistance = 0;
 		
 		for($i = 0; $i < $limit; $i++)
 		{
-			if($string1[$i] !== $string2[$i]) $hammeringDistance++;	
+			if($string1[$i] !== $string2[$i]) $hammingDistance++;	
 		}
 		
-		return $hammeringDistance + abs($lendif);
+		return $hammingDistance + abs($lendif);
 	}
 }
